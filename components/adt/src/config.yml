@@ -1,0 +1,8 @@
+tests:
+  adt:
+    jwt: !ENV ${JWT_TOKEN}
+    adt_port: !ENV ${ADT_PORT}
+    adt_predict: !ENV ${ADT_PREDICT_ENDPOINT}
+    adt_explain: !ENV ${ADT_EXPLAIN_ENDPOINT}
+    k8_dashboard_url: !ENV ${K8_NPRD_URL}
+    auth_token_k8: !ENV ${K8_NPRD_TOKEN}
