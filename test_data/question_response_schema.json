@@ -1,0 +1,74 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "next_item": {
+                "id": "b22babc9-d452-469c-970a-b7398eeb1bc1",
+                "code": "E_ADT20"
+            },
+            "error": null
+        }
+    ],
+    "required": [
+        "next_item",
+        "error"
+    ],
+    "properties": {
+        "next_item": {
+            "$id": "#/properties/next_item",
+            "type": "object",
+            "title": "The next_item schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "id": "b22babc9-d452-469c-970a-b7398eeb1bc1",
+                    "code": "E_ADT20"
+                }
+            ],
+            "required": [
+                "id",
+                "code"
+            ],
+            "properties": {
+                "id": {
+                    "$id": "#/properties/next_item/properties/id",
+                    "type": "string",
+                    "title": "The id schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "b22babc9-d452-469c-970a-b7398eeb1bc1"
+                    ]
+                },
+                "code": {
+                    "$id": "#/properties/next_item/properties/code",
+                    "type": "string",
+                    "title": "The code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "E_ADT20"
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "error": {
+            "$id": "#/properties/error",
+            "type": "null",
+            "title": "The error schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        }
+    },
+    "additionalProperties": true
+}
