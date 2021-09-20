@@ -4,7 +4,7 @@ def test_fun():
 
 def test_fun1():
     print("test 2")
-    assert 10!=10
+    assert 10==10
 
 def test_fun2():
     print("test 3")
