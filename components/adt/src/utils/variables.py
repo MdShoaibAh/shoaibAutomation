@@ -1,0 +1,5 @@
+question_schema = '../../../test_data/question_response_schema.json'
+no_map_schema = '../../../test_data/report_no_map_schema.json'
+map_schema = '../../../test_data/report_map_schema.json'
+payload = '../../../test_data/payload.json'
+config = ''

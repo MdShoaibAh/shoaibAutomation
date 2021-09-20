@@ -1,0 +1,40 @@
+
+" Scenarios to be Covered for API Automation "
+
+
+TEST_SCENARIO_1: Verify valid http response code 200 against the APIs
+Given: Post API endpoint is given
+When: we set HEADER param, Request Body and send HTTP POST request
+Then: Then I should receive valid HTTP response code 200 and Response body "POST" is non-empty
+
+TEST_SCENARIO_2: Verify response schema
+Given: Post API endpoint is given
+When: we set HEADER param, Request Body and send HTTP POST request
+Then: Then I should receive valid response schema as compared to the expected schema
+
+TEST_SCENARIO_3: Validate Errors by passing request payload response parameters 1,0 very first time)
+Given: Post API endpoint is given
+When: we set HEADER param, Change Request Body parameters and send HTTP POST request
+Then: Then I should receive validations errors. Error should be like (Session was not initialized etc)
+
+TEST_SCENARIO_4: Validate when student exceed attempt greater than 30th times, then validation should appears on 31st attempt
+Given: Post API endpoint is given
+When: we set HEADER param, hit and attempt test 31th times
+Then: Then I should receive validations "Test reached stopping criteria"
+
+TEST_SCENARIO_5: Verify that the question are generating randomly from pool and each next question code should be different
+ with the previous question
+Given: Post API endpoint is given
+When: we set HEADER param, hit and attempt the teset
+Then: Then I should get random question each question should be different than others
+
+TEST_SCENARIO_6: Verify mapping info is showing and not null whenever we pass parameters as
+ ( k12 Grade":int, "curriculum":str,"curriculumGrade":int, "curriculumSubject":str, "academicYear":int)
+Given: Post API endpoint is given
+When: we set HEADER param, Request Body and send HTTP POST request
+Then: Then I should receive the report and mapping
+
+TEST_SCENARIO_7: Verify mapping info should be null {} when passing only StudentID or Student ID with SessionID
+Given: Post API endpoint is given
+When: we set HEADER param, Request Body and send HTTP POST request
+Then: Then I should receive the report and mapping info should be null
