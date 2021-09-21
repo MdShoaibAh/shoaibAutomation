@@ -13,3 +13,7 @@ def test_fun2():
 def test_fun3():
     print("test 3")
     assert "10" == "hello"
+
+def test_fun4():
+    print("test 3")
+    assert "10" == "thanks"
