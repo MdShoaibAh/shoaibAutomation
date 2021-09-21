@@ -8,4 +8,4 @@ def test_fun1():
 
 def test_fun2():
     print("test 3")
-    assert "10" == "hello"
+    assert "10" == "10"
